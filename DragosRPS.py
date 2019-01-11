@@ -1,5 +1,6 @@
-#!/usr/bin/env python3
 import random
+
+!/usr/bin/env python3
 
 """This program plays a game of Rock, Paper, Scissors between two Players,
 and reports both Player's scores each round."""
@@ -61,11 +62,11 @@ class HumanPlayer(Player):
         moveToReturn = ""
         while not isValid:
             val = input("Rock, Paper, Scissors?")
-        for move in moves:
-            if val.lower() == move.lower():
-                isValid = True
-                moveToReturn = move
-                break
+            for move in moves:
+                if val.lower() == move.lower():
+                    isValid = True
+                    moveToReturn = move
+                    break
         return moveToReturn
 
 
